@@ -1,0 +1,8 @@
+name = "invitacion-bebe"
+pages_build_output_dir = "."
+compatibility_date = "2026-10-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "bebe-regalos"
+database_id = "bebe-regalos"
