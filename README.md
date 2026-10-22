@@ -25,3 +25,7 @@
 
 ## Liberar un regalo
 `npx wrangler d1 execute bebe-regalos --remote --command "DELETE FROM reservas WHERE regalo_id=3"`
+
+## Ver reservas en Google Sheets
+`/api/reservas?key=<RESERVAS_KEY>` devuelve un CSV. En un Google Sheet: `=IMPORTDATA("https://regalitos-frejolito.pages.dev/api/reservas?key=<RESERVAS_KEY>")`
+La clave es un secreto de Pages: `npx wrangler pages secret put RESERVAS_KEY --project-name regalitos-frejolito`
