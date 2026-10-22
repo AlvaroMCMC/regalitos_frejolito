@@ -18,7 +18,7 @@
 
 ## Local
 `npx wrangler d1 execute bebe-regalos --local --file=schema.sql`
-`npx wrangler pages dev . --d1=DB=bebe-regalos`
+`npx wrangler pages dev . --d1=DB=a230637e-53b9-4132-9e2a-c2a9094a05ba` (el valor de `--d1` debe ser el `database_id` de wrangler.toml, para compartir la misma base local)
 
 ## Ver reservas
 `npx wrangler d1 execute bebe-regalos --remote --command "SELECT g.nombre, r.nombres, r.creado_en FROM reservas r JOIN regalos g ON g.id=r.regalo_id"`
